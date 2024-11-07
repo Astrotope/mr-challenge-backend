@@ -1,8 +1,9 @@
-const express = require("express");
 const cors = require("cors");
+const express = require("express");
+const app = express();
+const port = process.env.PORT || 3001;
 
 const app = express();
-const port = 5010;
 
 app.use(cors());
 app.use(express.json());
@@ -16,6 +17,8 @@ app.post("/api/register", (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
+const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+
+server.keepAliveTimeout = 120 * 1000;
+server.headersTimeout = 120 * 1000;
+
