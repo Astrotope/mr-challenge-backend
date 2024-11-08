@@ -1,0 +1,59 @@
+# Mission Ready - Developer Challenge - Advanced Fullstack Developer
+
+## Backend:
+
+### Customer API Specification
+
+(1) Create and API endpoint that takes one parameter.
+(2) The parameter will be of String data type.
+(3) For now, let us refer to the parameter as input_parameter.
+(4) The backend API can be coded in any language.
+(5) On receiving a request to the API endpoint, the backend will respond with
+  * A String that reads - input_parameter + "is now registered"
+(6) The API can be hosted on localhost or a cloud service
+(7) The API needs the ability to be disabled, so the frontend can be tested with it offline.
+(8) The frontend specification notes the the input_parameter will be an email address, but as far as the backend is concerned it could be any value of type String.
+
+### Customer Deliverables for Proof of Concept - Backend
+
+(1) A video showing the frontend interacting with the backend.
+(2) The video should show the following user interaciton flow...
+  * An email address be entered on the frontend.
+  * The subscribe button being clicked/pressed on the frontend.
+(3) The video should show the frontend displaying the response from the backend API endpoint...
+  * With the backend enabled
+  * With the backend disabled.
+(4) The video only needs to be of sufficient quality to demonstrate (2) & (3)
+(5) A link should be provided to the code for the backend API on GitHub.
+(6) There are additional requirements for the video in the frontend specification.
+  * See the frontend specification here [Frontend Spec.]()
+
+### API Design Specification
+
+Languages: Javascript, JSON, Bash/Zsh
+Technology Stack: Node.js, Express.js
+Code Revision Control: git with a repository on GitHub
+Deployment Backend: Render.com (free emphemeral instances) these take 20-40 seconds to spin-up, on first API call.
+Deployment Frontend: GitHub Pages
+
+#### Request Spec:
+(1) Requests will be sent to the backend using the HTTP POST method with a JSON payload
+
+API Endpoints:
+(1) /api/register
+  * Request:
+    * POST request, containing a JSON payload in the request body.
+    * Content-Type: application/json; charset=utf-8
+    * JSON Payload: example - {email: "mary@mail.com"}
+  * Response:
+    * Content Type: 
+    * JSON Payload: example -  {"message":"mary@mail.com is now registered"}
+
+#### CORS:
+(1) For testing the access-control-allow-origin header will be set to '*'
+
+#### Security:
+(1) HTTPS
+(2) 
+
+
