@@ -52,24 +52,24 @@ Langauges: Javascript, JSON
        * Response: {"message":"alan@mrhq.com is now registered"}% - Takes around 30 seconds when idle.
 
 (2) https://[frontend-domain]/api/enable
-    * Request
-        * POST
-        * Payload: JSON
-        * Format: Example - {"enable": "true"} to enable /api/subscribe endpoint
-        * Format: Example - {"enable": "false"} to disable /api/subscribe endpoint 
+  * Request
+    * POST
+      * Payload: JSON
+      * Format: Example - {"enable": "true"} to enable /api/subscribe endpoint
+      * Format: Example - {"enable": "false"} to disable /api/subscribe endpoint 
 
 #### API Security
 
 Note: An
 
 (1) For the demo the following were considered...
-    * Hosting on HTTPS for encrypted communication.
-    * Cross-origin resource sharing (CORS) policy
-            * For development, we will just use an all hosts '*' policy.
-            * For production, we should specify teh hosts specifically.
+  * Hosting on HTTPS for encrypted communication.
+  * Cross-origin resource sharing (CORS) policy
+    * For development, we will just use an all hosts '*' policy.
+    * For production, we should specify teh hosts specifically.
 (2) Not considered for the demo...
-    * Checking supplied String for safety, excessive length, injection attacks, path traversal attacks, and email address validity.
-    * Rate limiting the API to prevent DOS attacks.
-    * The remainder of the OWASP top 10. 
+  * Checking supplied String for safety, excessive length, injection attacks, path traversal attacks, and email address validity.
+  * Rate limiting the API to prevent DOS attacks.
+  * The remainder of the OWASP top 10. 
 
 TBD: Lots...
