@@ -24,7 +24,7 @@
   * This should video should show the operation of the frontend...
     * With the backend enabled.
     * With the backend disabled.
-  * 
+
 
 
 ### Development API specification
@@ -38,18 +38,18 @@ Langauges: Javascript, JSON
 #### API Endpoints
 
 (1) https://[endpoint-domain]/api/subscribe
-    * Request: 
-        * POST
-        * Payload: JSON
-        * Format: Example - {email: "mary@mail.com"}
+  * Request: 
+    * POST
+      * Payload: JSON
+      * Format: Example - {email: "mary@mail.com"}
     * Response:
-        * POST
-        * Payload: JSON
+      * POST
+      * Payload: JSON
         * Format: Example - {"message":"mary@mail.com is now registered"}
         * Status Code: 200 OK
     * Testing
-        * curl -X POST https://[backend-domain]/api/register  -H "Content-Type: application/json" -d '{"email": "alan@mrhq.com"}
-        * Response: {"message":"alan@mrhq.com is now registered"}% - Takes around 30 seconds when idle.
+       * curl -X POST https://[backend-domain]/api/register  -H "Content-Type: application/json" -d '{"email": "alan@mrhq.com"}
+       * Response: {"message":"alan@mrhq.com is now registered"}% - Takes around 30 seconds when idle.
 
 (2) https://[frontend-domain]/api/enable
     * Request
